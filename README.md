@@ -6,7 +6,7 @@
 - Routing to 3 separate websites using URL routing in host application
 
 ## Task List 
-- [ ] Hello World SpringBoot
+- [x] Hello World SpringBoot
 - [ ] Render a simple HTML page through SpringBoot 
 - [ ] Simple web-page index.html (bootstrap) that includes a simple webcomponent button
 - [ ] Introduce Stencil to render the web-component
