@@ -17,7 +17,7 @@ fun main(args: Array<String>) {
 class WebEndpoint {
 
     @GetMapping()
-    fun index() : ResponseEntity<String> {
-        return ResponseEntity.ok("Hello World")
+    fun index(): String {
+        return "index"
     }
 }
