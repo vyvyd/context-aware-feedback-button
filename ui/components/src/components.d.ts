@@ -5,8 +5,13 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { ModalEvents } from "./components/feedback-modal/modal-events";
 export namespace Components {
     interface FeedbackButton {
+    }
+    interface FeedbackModal {
+        "targetEmail": string;
+        "visible": boolean;
     }
 }
 declare global {
@@ -16,15 +21,28 @@ declare global {
         prototype: HTMLFeedbackButtonElement;
         new (): HTMLFeedbackButtonElement;
     };
+    interface HTMLFeedbackModalElement extends Components.FeedbackModal, HTMLStencilElement {
+    }
+    var HTMLFeedbackModalElement: {
+        prototype: HTMLFeedbackModalElement;
+        new (): HTMLFeedbackModalElement;
+    };
     interface HTMLElementTagNameMap {
         "feedback-button": HTMLFeedbackButtonElement;
+        "feedback-modal": HTMLFeedbackModalElement;
     }
 }
 declare namespace LocalJSX {
     interface FeedbackButton {
     }
+    interface FeedbackModal {
+        "onModalEvents"?: (event: CustomEvent<ModalEvents>) => void;
+        "targetEmail"?: string;
+        "visible"?: boolean;
+    }
     interface IntrinsicElements {
         "feedback-button": FeedbackButton;
+        "feedback-modal": FeedbackModal;
     }
 }
 export { LocalJSX as JSX };
@@ -32,6 +50,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "feedback-button": LocalJSX.FeedbackButton & JSXBase.HTMLAttributes<HTMLFeedbackButtonElement>;
+            "feedback-modal": LocalJSX.FeedbackModal & JSXBase.HTMLAttributes<HTMLFeedbackModalElement>;
         }
     }
 }

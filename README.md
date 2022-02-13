@@ -10,6 +10,7 @@
 - [x] Render a simple HTML page through SpringBoot 
 - [x] Simple web-page index.html (bootstrap) that includes a simple webcomponent button
 - [x] Introduce Stencil to render the web-component
+- [x] Have not to copy over the compile ts files
 - [ ] Clean up project structure
 - [ ] Open a modal when you click the button 
 - [ ] Send event to the web-component that contains some info
