@@ -13,7 +13,8 @@ export class CustomFeedbackComponent {
   }
 
   @State() isModalOpen: boolean;
-  @State() targetEmail: string;
+
+  @State() targetEmail: string = null;
 
   private openModal() {
     this.isModalOpen = true
@@ -36,7 +37,13 @@ export class CustomFeedbackComponent {
   render() {
     return (
       <div>
-        <button onClick={ () => this.openModal()}>Feed us back!</button>
+        <button
+          onClick={ () => this.openModal() }
+          class= { this.targetEmail === null ? "invisible" : ""}
+        >
+          Feed us back!
+
+        </button>
         <feedback-modal
           targetEmail={this.targetEmail}
           visible={this.isModalOpen}
