@@ -8,6 +8,8 @@ import { Component, h } from '@stencil/core';
 export class CustomFeedbackComponent {
 
   render() {
-    return <button>Tell me!</button>
+    return (
+        <button>Feed us back!</button>
+    )
   }
 }
