@@ -12,7 +12,7 @@
 - [x] Introduce Stencil to render the web-component
 - [x] Have not to copy over the compile ts files
 - [ ] Clean up project structure
-- [ ] Open a modal when you click the button 
-- [ ] Send event to the web-component that contains some info
-- [ ] The opened modal will display the contents sent in the event
+- [x] Open a modal when you click the button 
+- [x] Send event to the web-component that contains some info
+- [x] The opened modal will display the contents sent in the event
 
