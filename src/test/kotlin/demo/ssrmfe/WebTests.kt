@@ -20,4 +20,17 @@ class WebTests {
         driver.quit()
     }
 
+    @Test
+    fun indexPageHasAFeedbackButton() {
+        System.setProperty(
+            "webdriver.chrome.driver",
+            "src/test/resources/chromedriver"
+        );
+        val driver = ChromeDriver()
+        driver.get("http://localhost:8080")
+        driver.findElement(By.name("feedback-button"))
+        driver.manage().timeouts().implicitlyWait(1000, TimeUnit.MILLISECONDS)
+        driver.quit()
+    }
+
 }

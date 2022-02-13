@@ -7,8 +7,8 @@
 
 ## Task List 
 - [x] Hello World SpringBoot
-- [ ] Render a simple HTML page through SpringBoot 
-- [ ] Simple web-page index.html (bootstrap) that includes a simple webcomponent button
+- [x] Render a simple HTML page through SpringBoot 
+- [x] Simple web-page index.html (bootstrap) that includes a simple webcomponent button
 - [ ] Introduce Stencil to render the web-component
 - [ ] Open a modal when you click the button 
 - [ ] Send event to the web-component that contains some info
