@@ -1,5 +1,14 @@
 <html xmlns:th="http://www.w3.org/1999/xhtml">
 <script type="module" th:src="@{wc/feedback.esm.js}"></script>
 <h1 name="welcome-text"> Welcome to index</h1>
+<div>
+<p>To update feedback email, </p>
+<code>
+    document.dispatchEvent(new CustomEvent("updateEmail", {"detail":{"email": "rude@scranton.com"}}))
+</code>
+<p></p>
+</div>
+<div>
 <feedback-button></feedback-button>
+</div>
 </html>
