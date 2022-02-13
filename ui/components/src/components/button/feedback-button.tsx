@@ -13,9 +13,15 @@ export class CustomFeedbackComponent {
   }
 
   @State() isModalOpen: boolean;
+  @State() targetEmail: string;
 
   private openModal() {
     this.isModalOpen = true
+  }
+
+  @Listen('updateEmail', { target: 'document' })
+  handleUpdateEmail(event: CustomEvent<UpdateEmailEvent>) {
+    this.targetEmail = event.detail.email;
   }
 
 
@@ -32,7 +38,7 @@ export class CustomFeedbackComponent {
       <div>
         <button onClick={ () => this.openModal()}>Feed us back!</button>
         <feedback-modal
-          targetEmail={"vineeth.ink@gmail.com"}
+          targetEmail={this.targetEmail}
           visible={this.isModalOpen}
         />
       </div>

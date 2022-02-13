@@ -1,0 +1,3 @@
+class UpdateEmailEvent {
+  email: string
+}

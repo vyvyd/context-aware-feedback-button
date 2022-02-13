@@ -24,8 +24,6 @@ export class FeedbackModal {
     this.visible = false
   }
 
-
-
   render(): JSX.Element {
     return (
       <div class={this.visible ? "wrapper visible" : "wrapper"}>
