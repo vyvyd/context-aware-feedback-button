@@ -1,11 +1,14 @@
 # Context-Aware Feedback Button
 
 ## Aim 
-For an Single-Page-Application (SPA), design a feedback button that can be used across various micro-frontends in a single UI.
+For an Single-Page-Application (SPA), design a context-aware feedback button that can be used across various micro-frontends in a single UI.
 
-This button has a **context aware** target email address that can be set from any micro-frontend.
+### How is it context-aware?
+This button has a **context aware** email address property that can be set from any micro-frontend. When the button is clicked, then a modal window opens that displays the set email-address.
 
-**Assumptions:** 
+This allows individual microfrontends to configure the feedback email-address as they per their need. 
+
+### Assumptions 
 1. Configuring the property is done through DOM events
 
 ## Running the application
