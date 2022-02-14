@@ -6,7 +6,7 @@ For an Single-Page-Application (SPA), design a context-aware feedback button tha
 ### How is it context-aware?
 This button has a **context aware** email address property that can be set from any micro-frontend. When the button is clicked, then a modal window opens that displays the set email-address.
 
-This allows individual microfrontends to configure the feedback email-address as they per their need. 
+This allows individual microfrontends to configure the feedback email-address as they need. 
 
 ### Assumptions 
 1. Configuring the property is done through DOM events
