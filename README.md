@@ -1,13 +1,12 @@
-# Feedback Button
+# Context-Aware Feedback Button
 
 ## Aim 
 For an Single-Page-Application (SPA), design a feedback button that can be used **across** various micro-frontends.
 
-**Assumptions:** 
+This button has a context aware target email address that can be set from any micro-frontend loaded on the UI.
 
-1. The feedback button has a configurable property 'email-address'
-2. Every micro-frontend can configure the property
-3. Configuring the property is done through DOM events
+**Assumptions:** 
+1. Configuring the property is done through DOM events
 
 ## Running the application
 
@@ -23,6 +22,16 @@ npm start
 
 Browse to http://localhost:8080/
 
+### UI screens
+
+Screen 1:  
+![Alt text](images/1.png?raw=true "Title")
+
+Screen 2:  
+![Alt text](images/2.png?raw=true "Title")
+
+Screen 3:  
+![Alt text](images/3.png?raw=true "Title") 
 
 ## Development
 
