@@ -8,8 +8,9 @@ This button has a **context aware** email address property that can be set from 
 
 This allows individual microfrontends to configure the feedback email-address as they need. 
 
-### Assumptions 
-1. Configuring the property is done through DOM events
+### Constraints 
+1. Since the button is to be used across various UI toolkits/frameworks, the solution was based on web-components. 
+2. [StencilJS](https://stenciljs.com/) was used to create web-components
 
 ## Running the application
 
@@ -42,7 +43,6 @@ This project uses Thymeleaf to render `index.html`.
 
 The compiled webcomponent build output are symlinked to avoid CORS issues, and also, because I was super lazy and didn't do this in better way.
 
-
 ## Task List 
 - [x] Hello World SpringBoot
 - [x] Render a simple HTML page through SpringBoot 
@@ -54,3 +54,7 @@ The compiled webcomponent build output are symlinked to avoid CORS issues, and a
 - [x] Send event to the web-component that contains some info
 - [x] The opened modal will display the contents sent in the event
 
+## References 
+
+1. https://www.carlrippon.com/creating-modal-dialog-web-component-stenciljs/
+2. https://getcssscan.com/css-buttons-examples
